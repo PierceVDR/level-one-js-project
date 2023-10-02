@@ -19,6 +19,7 @@ qup = document.getElementById("qup");
 q = document.getElementById("q");
 qdown = document.getElementById("qdown");
 
+total = document.getElementById("total");
 
 
 pup.addEventListener("click", pupf);
@@ -40,6 +41,8 @@ function updateCoins() {
     n.innerHTML=nickels;
     d.innerHTML=dimes;
     q.innerHTML=quarters;
+
+    total.innerHTML = "$" + (pennies*0.01 + nickels*0.05 + dimes*0.10 + quarters*0.25);
 }
 
 
