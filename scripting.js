@@ -37,12 +37,25 @@ qdown.addEventListener("click", qdownf);
 
 
 function updateCoins() {
+    pennies = Math.max(0,pennies);
+    nickels = Math.max(0,nickels);
+    dimes = Math.max(0,dimes);
+    quarters = Math.max(0,quarters);
+
     p.innerHTML=pennies;
     n.innerHTML=nickels;
     d.innerHTML=dimes;
     q.innerHTML=quarters;
 
-    total.innerHTML = "$" + (pennies*0.01 + nickels*0.05 + dimes*0.10 + quarters*0.25);
+    totalCents = (pennies + nickels*5 + dimes*10 + quarters*25);
+    dollars = Math.floor(totalCents/100);
+    cents = totalCents - dollars*100;
+
+    if (cents<10) {
+        cents = "0"+cents;
+    }
+
+    total.innerHTML = "$"+dollars+"."+cents;
 }
 
 
