@@ -55,7 +55,7 @@ function updateCoins() {
         cents = "0"+cents;
     }
 
-    total.innerHTML = "$"+dollars+"."+cents;
+    total.innerHTML = "&dollar;"+dollars+"."+cents;
 }
 
 
