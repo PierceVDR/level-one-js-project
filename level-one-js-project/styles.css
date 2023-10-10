@@ -1,0 +1,38 @@
+.numSelector {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    background-color: #c4f2ff;
+}
+
+td {
+    border-radius: 10%;
+    border-color: #004159;
+    text-align: center;
+    margin: 0px 0px;
+    width: 20vmin;
+    height: 20vmin;
+    padding: 0px 0px;
+}
+
+.numDisplay {
+    background-color: white;
+    border-style: solid;
+}
+
+span {
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px;
+    color: #004159;
+    width: 100%;
+    height: 100%;
+}
